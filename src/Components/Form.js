@@ -3,9 +3,9 @@ import { useState } from 'react'
 function Form (){
     function cadastrarUsuario(e){
         e.preventDefault()
-        console.log(name)
-        console.log(password)
-        console.log(`Cadastrou o usuario`)
+        console.log(`Usuário ${name} foi cadastrado`)
+        console.log(`A senha ${password} foi cadastrada`)
+        
 
     }
     

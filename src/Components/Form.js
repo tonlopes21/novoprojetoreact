@@ -3,8 +3,9 @@ import { useState } from 'react'
 function Form (){
     function cadastrarUsuario(e){
         e.preventDefault()
-        console.log(`Usuário ${name} foi cadastrado`)
-        console.log(`A senha ${password} foi cadastrada`)
+        console.log(`O Usuário ${name} foi cadastrado com a senha ${password}`)
+        
+        
         
 
     }
@@ -14,6 +15,8 @@ function Form (){
     //setName = é o nome da manipulação que será atribuída ao name.
     //useState(), dentro de "()"é o valor que se inicia quando o component for inicializado.
     const [password, setPassword] = useState() 
+    
+
 
 
     return(
@@ -43,6 +46,7 @@ function Form (){
                      placeholder="Digite sua senha"
                      onChange={(e) => setPassword(e.target.value)}/>
                 </div>
+               
                 <div>
                     <input type="submit" value="Cadastrar" />
                 </div>

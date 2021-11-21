@@ -16,9 +16,8 @@ function App() {
     <div className={"App"}>
     <h1> Renderização Condicional</h1>
     <Condicional/>
-    <Evento numero="1"/>
-    <Evento numero="2"/>
-    <Evento numero="3"/>
+    <Evento/>
+    
     <Form/>
     
     

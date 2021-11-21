@@ -2,15 +2,16 @@ import Button from './evento/Button'
 
 function Evento({numero}){
 
-    function meuPrimeiroEvento(){
-        console.log(`Funcionou com o número ${numero}`)
+    function meuEvento(){
+        console.log(`Funcionou!`)
     }
 
 
 
     return(
         <div>
-            <button onClick={meuPrimeiroEvento}>Evento {numero}</button>
+            <Button event={meuEvento} text="Primeiro evento"/>
+
 
         </div>
 

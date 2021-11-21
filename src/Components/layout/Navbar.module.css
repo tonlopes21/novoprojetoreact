@@ -1,0 +1,7 @@
+.list{
+    display: flex; /*Assim posso jogar um item do lado do outro*/
+    list-style: none; /*retira a bolinha do lado*/
+}
+.item{
+    margin-right: 1em;
+}

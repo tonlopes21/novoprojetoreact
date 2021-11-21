@@ -1,63 +1,29 @@
-import { useState } from 'react'
+function Form(){
 
-function Form (){
+
     function cadastrarUsuario(e){
         e.preventDefault()
-        console.log(`O Usuário ${name} foi cadastrado com a senha ${password}`)
-        
-        
-        
+        console.log("Funcionou, oras!")
 
     }
-    
-    const [name, setName] = useState()
-    //name = nome do tributo , o que irá resgatar
-    //setName = é o nome da manipulação que será atribuída ao name.
-    //useState(), dentro de "()"é o valor que se inicia quando o component for inicializado.
-    const [password, setPassword] = useState() 
-    
-
-
 
     return(
-
         <div>
-            <h1>
-                Meu cadastro
-            </h1>
+            <h1>Meu cadastro:</h1>
             <form onSubmit={cadastrarUsuario}>
                 <div>
-                    <label htmlFor="name" >Nome:</label>
-                    <input type="text" 
-                    id="name" 
-                    name="name"
-                    placeholder="Digite o seu nome"                    
-                    onChange={(e) => setName(e.target.value)}
-                    
-                    //Ao utilizar o onChange, fará com que qualquer alteração seja inserida no state. 
-                    />
-                    
+                    <input type="text" placeholder="Digite o seu nome"/>
                 </div>
-                <div>
-                    <label htmlFor="password">Senha:</label>
-                    <input type="password" 
-                     id="password" 
-                     name="password"
-                     placeholder="Digite sua senha"
-                     onChange={(e) => setPassword(e.target.value)}/>
-                </div>
-               
                 <div>
                     <input type="submit" value="Cadastrar" />
                 </div>
-                
-                
             </form>
+        
+
 
 
         </div>
     )
-    
-}
+    //Ao usar o submit, ele irá verificar no form se foi passado algo para ser executada a função. 
 
-export default Form
+} export default Form
